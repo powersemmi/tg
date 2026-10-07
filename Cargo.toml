@@ -1,0 +1,22 @@
+[package]
+name = "tg"
+version = "0.1.0"
+edition = "2024"
+description = "Read Telegram messages from the terminal."
+license = "MIT"
+
+[dependencies]
+grammers-client = "0.10"
+grammers-session = "0.10"
+clap = { version = "4", features = ["derive"] }
+tokio = { version = "1", features = ["rt-multi-thread", "macros"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+toml = "0.9"
+chrono = "0.4"
+comfy-table = "7"
+anyhow = "1"
+dirs = "6"
+console = "0.16"
+rpassword = "7"
+open = "5"
